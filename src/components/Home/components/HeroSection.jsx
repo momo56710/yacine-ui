@@ -25,9 +25,7 @@ import {
             </Text>
           </Heading>
           <Text color={'gray.500'} maxW={'3xl'}>
-            Never miss a meeting. Never be late for one too. Keep track of your
-            meetings and receive smart reminders in appropriate times. Read your
-            smart “Daily Agenda” every morning.
+          The School Security System provides a secure and efficient way to manage school access, track attendance, and respond to emergencies. Our system ensures that only authorized personnel are allowed on site, students are safe at all times, and emergency response protocols are in place to quickly alert staff and authorities.
           </Text>
           <Stack spacing={6} direction={'row'}>
             <Button
