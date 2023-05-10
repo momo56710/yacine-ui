@@ -44,6 +44,8 @@ export default function Attendance() {
               <Th>ID Card Number</Th>
               <Th>Time Out</Th>
               <Th>Time In</Th>
+              <Th>Role</Th>
+              
             </Tr>
           </Thead>
           <Tbody>
@@ -55,6 +57,7 @@ export default function Attendance() {
                   <Td>{e.password} </Td>
                   <Td>{e.phone} </Td>
                   <Td>{e.phone} </Td>
+                  <Td>{e.gender} </Td>
                 </Tr>
               );
             })}

@@ -28,7 +28,9 @@ import {
   ChevronRightIcon,
 } from "@chakra-ui/icons";
 import { ColorModeSwitcher } from "./ColorModeSwitcher";
+import { useNavigate } from "react-router-dom";
 export default function NavBar() {
+  const navigate = useNavigate()
   const { isOpen, onToggle } = useDisclosure();
 
   return (
@@ -91,7 +93,7 @@ export default function NavBar() {
             <MenuItem>Link 1</MenuItem>
             <MenuItem>Link 2</MenuItem>
             <MenuDivider />
-            <MenuItem>Link 3</MenuItem>
+            <MenuItem onClick={()=>{navigate('/signin')}}>logout</MenuItem>
           </MenuList>
         </Menu>
       </Flex>

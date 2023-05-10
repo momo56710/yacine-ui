@@ -1,6 +1,6 @@
 import { Input, Button, Box } from "@chakra-ui/react";
 
-export default function Search({ users, setSearchResults }) {
+export default function Searc({ users, setSearchResults }) {
     const handleSearchChange = (e)=>{
         if(!e.target.value) return setSearchResults(users)
         const resultsArray = users.filter(user => user.firstName.toLocaleLowerCase().includes(e.target.value.toLocaleLowerCase()))
