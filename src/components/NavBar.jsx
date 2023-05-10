@@ -261,22 +261,22 @@ const MobileNavItem = ({ label, children, href }) => {
 const NAV_ITEMS = [
   {
     label: "Home",
-    href: "#",
+    href: "/",
   },
   {
     label: "Dashboard",
-    href: "#",
+    href: "/dashboard",
   },
   {
     label: "Add",
     children: [
       {
         label: "Add staff",
-        href: "#",
+        href: "/add/staff",
       },
       {
         label: "Add student",
-        href: "#",
+        href: "/add/student",
       },
     ],
   },
@@ -285,12 +285,16 @@ const NAV_ITEMS = [
     children: [
       {
         label: "staff Reporting",
-        href: "#",
+        href: "/report/staff",
       },
       {
         label: "student Reporting",
-        href: "#",
+        href: "/report/student",
       },
     ],
+  },
+  {
+    label: "Live Attendance",
+    href: "/attendance",
   },
 ];

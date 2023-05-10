@@ -3,7 +3,7 @@ import { Input, Button, Box } from "@chakra-ui/react";
 export default function Search({ users, setSearchResults }) {
     const handleSearchChange = (e)=>{
         if(!e.target.value) return setSearchResults(users)
-        const resultsArray = users.filter(user => user.firstName.toLocaleLowerCase().includes(e.target.value.toLocaleLowerCase()))
+        const resultsArray = users.filter(user => user.firstName.toLocaleLowerCase().includes(e.target.value.toLocaleLowerCase()) || user.lastName.toLocaleLowerCase().includes(e.target.value.toLocaleLowerCase()))
         setSearchResults(resultsArray)
     } 
   return (
